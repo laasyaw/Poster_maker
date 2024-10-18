@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poster Maker App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+    <section id="first">
+        <p style="font-size: 36px;"><b>Change Font Size</b></p>
+        <input type="range" id="font-size-slider" min="16" max="160" value="32">
+        <span id="font-size-display">32px</span>
+
+        <p style="font-size: 36px; "><b>Select Font</b></p>
+        <select id="font-selector">
+            <option value="Dancing Script">Dancing Script</option>
+            <option value="Arial">Arial</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Tahoma">Tahoma</option>
+            <option value="Trebuchet MS">Trebuchet MS </option>
+            <option value="Times New Roman">Times New Roman </option>
+            <option value="Georgia">Georgia </option>
+            <option value="Garamond ">Garamond </option>
+            <option value="Courier New ">Courier New </option>
+            <option value="Brush Script MT">Brush Script MT</option>
+ 
+        </select>
+
+        <p style="font-size: 40px;"><b>Upload Background Image</b></p>
+        <input type="file" id="image-uploader" accept="image/*">
+        </section>
+        <section id="second">
+        <div id="capture">
+            <h1 id="poster-text">Start typing</h1>
+            <img id="poster-image" src="ede.jpg" alt="Poster Background">
+        </div>
+
+        <p style="font-size: 36px;"><b>TYPE HERE &#128071;</b></p>
+        <textarea id="poster-input"></textarea>
+        <div style="display: flex ;gap: 5px;">
+        <button type="button" onClick="generate()">Generate</button>
+
+        <a id="download" download="poster.jpeg">
+            <button type="button" onClick="download()">Download</button>
+        </a>
+        <a href="home.html">
+            <button type="button">GO Back To Home</button>
+        </a>
+</div>
+        <div id="render">
+            <h1>Render</h1>
+        </div>
+    </section>
+
+    <script src="html2canvas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

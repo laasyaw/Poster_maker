@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
+body {
+  margin: 0;
+  font-family: "Dancing Script", cursive;
+  color: rgb(254, 254, 254);
+  background-image: url(sam.avif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 16px;
+}
+
+#first {
+  display: grid;
+  justify-items: left;
+  font-size: 40px;
+  padding-left: 30px;
+}
+#second {
+    display:grid;
+    justify-items: center;
+  }
+
+#capture {
+  position: relative;
+  font-size: 3em;
+  width: 600px;
+  height: 700px;
+  overflow: hidden;
+}
+
+#poster-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#poster-text {
+  position: absolute;
+  margin: 0;
+  top: 0.5em;
+  left: 0.5em;
+  right: 0.5em;
+  bottom: 0.5em;
+  text-align: center;
+  color: white;
+}
+
+button {
+  font-size:40px;
+}
+
+textarea {
+  padding: 1em;
+  width: 700px;
+  height: 70px;
+}
+
+#font-size-display {
+  font-size: 1.2em;
+  color: azure;
+}
+
+p {
+  color: azure;
+}
+
+
+
+input[type="range"] {
+  width: 700px;
+}
+#render canvas {
+    width: 100%; 
+    height: auto;
+  }
