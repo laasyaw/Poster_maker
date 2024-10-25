@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Poster Maker App</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+</head>
+<body>
+    <section id="first">
+        <div class="menu-bar">
+            <div class="menu-item">
+                <p style="font-size: 36px;"><b>Change Font Size</b></p>
+                <input type="range" id="font-size-slider" min="16" max="160" value="32">
+                <span id="font-size-display" style="color: black;">32px</span>
+            </div>
+    
+            <div class="menu-item">
+                <p style="font-size: 36px;"><b>Select Font</b></p>
+                <select id="font-selector">
+                    <option value="Dancing Script">Dancing Script</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Helvetica">Helvetica</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Tahoma">Tahoma</option>
+                    <option value="Trebuchet MS">Trebuchet MS</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Garamond">Garamond</option>
+                    <option value="Courier New">Courier New</option>
+                    <option value="Brush Script MT">Brush Script MT</option>
+                </select>
+            </div>
+    
+            <div class="menu-item">
+                <p style="font-size: 36px;"><b>Font Color</b></p>
+                <input type="color" id="font-color-picker">
+            </div>
+    
+            <div class="menu-item">
+                <p style="font-size: 36px;"><b>Upload Background Image</b></p>
+                <input type="file" id="image-uploader" accept="image/*">
+            </div>
+        </div>
+    </section>
+    
+    <section id="second">
+        <div class="flex-container">
+            <div id="capture" class="poster-container">
+                <img id="poster-image" src="ede.jpg" alt="Poster Background">
+                <h1 id="poster-text" class="draggable-text" draggable="true">Start typing</h1>
+            </div>
+            <div class="text-area">
+                <p style="font-size: 36px;"><b>TYPE HERE &#128071;</b></p>
+                <textarea id="poster-input"></textarea>
+                <button type="button" id="add-text-button">Add Another Text</button>
+                <div id="new-text-inputs"></div>
+                
+                <!-- Button Section -->
+                <div style="display: flex; gap: 5px; margin-top: 10px;">
+                    <button type="button" id="generate-button">Generate</button>
+                    <a href="index.html">
+                        <button type="button">Back To Home</button>
+                    </a>
+                </div>
+    
+                <div id="render" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="html2canvas.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

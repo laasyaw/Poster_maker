@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        body {
+            background-image:url( bg.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            font-family: Dancing Script, cursive;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        form {
+            background-color: #fff;
+            margin: 50px auto;
+            padding: 20px;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: plum;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1 style="color:azure; font-size: 70px; padding-top: 50px;">Feedback</h1>
+    <p style="color: azure; font-size: 70px;">We would love to hear your thoughts!</p>
+</div>
+    <form action="submit_feedback.html" method="get">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="5" required></textarea>
+        
+        <button type="submit">Submit Feedback</button>
+    </form>
+</body>
+</html>
